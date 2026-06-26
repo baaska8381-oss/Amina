@@ -1,0 +1,6 @@
+{
+  "name": "Cinematic Space-Travel Landing Page",
+  "description": "A luxury cinematic landing page with dual video crossfade backgrounds, liquid-glass aesthetic, custom animations, and capabilities grids for Mars and beyond.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
