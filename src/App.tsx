@@ -6,6 +6,8 @@ import MathGame from "./components/MathGame";
 import VandeboRhythm from "./components/VandeboRhythm";
 import VolleyballSpiker from "./components/VolleyballSpiker";
 import AboutStoryQuiz from "./components/AboutStoryQuiz";
+import IdolCoach from "./components/IdolCoach";
+import AminaHelper from "./components/AminaHelper";
 import {
   ArrowUpRightIcon,
   PlayIcon,
@@ -123,6 +125,18 @@ export default function App() {
               className="px-3 md:px-4 py-2 text-xs md:text-sm font-medium text-white/60 font-body rounded-full hover:bg-white/10 hover:text-white transition-all cursor-pointer"
             >
               Тоглоомын Цэс
+            </button>
+            <button
+              onClick={() => scrollToSection("ebo-coach-section")}
+              className="px-3 md:px-4 py-2 text-xs md:text-sm font-medium text-white/60 font-body rounded-full hover:bg-white/10 hover:text-white transition-all cursor-pointer"
+            >
+              Ebo Coach
+            </button>
+            <button
+              onClick={() => window.dispatchEvent(new CustomEvent("open-amina-chat"))}
+              className="px-3 md:px-4 py-2 text-xs md:text-sm font-medium text-pink-400 font-body rounded-full hover:bg-pink-500/10 hover:text-pink-300 transition-all cursor-pointer border border-pink-500/20"
+            >
+              Amina Helper ✨
             </button>
             <button
               onClick={() => scrollToSection("about-quiz-section")}
@@ -552,6 +566,34 @@ export default function App() {
         </div>
       </section>
 
+      {/* SECTION 3.5 — IDOL COACH EBO (Vandebo) */}
+      <section
+        id="ebo-coach-section"
+        className="w-full min-h-screen relative overflow-hidden bg-black flex flex-col justify-center py-20 border-t border-white/5"
+      >
+        <div className="relative z-10 px-4 sm:px-8 md:px-16 lg:px-20 w-full max-w-7xl mx-auto flex flex-col">
+          
+          <div className="max-w-3xl mb-12">
+            <span className="text-sm font-body font-mono text-violet-400 tracking-widest block uppercase mb-4 animate-pulse">
+              // Vandebo Idol Coach
+            </span>
+            <h2 className="font-heading italic text-white text-5xl md:text-7xl leading-[0.9] tracking-[-3px]">
+              Ebo Coach-той ярилц
+            </h2>
+            <p className="text-sm md:text-base text-white/60 font-body font-light mt-4">
+              Хөгжим, зорилго болон амьдралын үнэ цэнэтэй туршлагаас хуваалцах Vandebo хамтлагийн Ebo (Бат-Эрдэнэ)-тэй шууд холбогдож, урам зориг аваарай!
+            </p>
+          </div>
+
+          <div className="w-full shadow-2xl">
+            <IdolCoach />
+          </div>
+
+        </div>
+      </section>
+
+
+
       {/* SECTION 4 — ABOUT AMIN-OD 10 QUESTIONS QUIZ */}
       <section
         id="about-quiz-section"
@@ -582,6 +624,9 @@ export default function App() {
       <footer className="w-full text-center py-6 text-xs text-white/30 tracking-widest font-body uppercase border-t border-white/5 relative z-10 select-none bg-black/80 backdrop-blur">
         &copy; 2026 АМИН-ОД CO. ALL RIGHTS RESERVED. ВАНДЕБО, ВОЛЛЕЙБОЛ БОЛОН IT ЕРТӨНЦ
       </footer>
+
+      {/* Floating global chat assistant */}
+      <AminaHelper />
     </main>
   );
 }
