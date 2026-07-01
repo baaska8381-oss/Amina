@@ -1,0 +1,92 @@
+[
+  {
+    "id": 1,
+    "emojis": "🏴‍☠️🍖👒⚔️⛵",
+    "answer": "One Piece",
+    "options": ["One Piece", "Naruto", "Attack on Titan", "Demon Slayer"],
+    "answers": ["one piece", "onepiece", "ван пийс", "ванпийс", "онэ пис", "one-piece", "ван-пийс"],
+    "image": "https://images.unsplash.com/photo-1607604276583-eef5d076aa5f?w=600&auto=format&fit=crop&q=60",
+    "video": "P_kt_7N6-i8"
+  },
+  {
+    "id": 2,
+    "emojis": "🦊🍜🍥🌀🗡️",
+    "answer": "Naruto",
+    "options": ["Dragon Ball Z", "Naruto", "Jujutsu Kaisen", "Bleach"],
+    "answers": ["naruto", "наруто", "шиппуден", "naruto shippuden", "наруто шипүдэн"],
+    "image": "https://images.unsplash.com/photo-1578632767115-351597cf2477?w=600&auto=format&fit=crop&q=60",
+    "video": "QczGoNoa60U"
+  },
+  {
+    "id": 3,
+    "emojis": "👹⚔️🎋🌊🐗",
+    "answer": "Demon Slayer",
+    "options": ["My Hero Academia", "Demon Slayer", "Jujutsu Kaisen", "Hunter x Hunter"],
+    "answers": ["demon slayer", "киметсу но яиба", "kimetsu no yaiba", "чөтгөрийн ангууч", "demonslayer"],
+    "image": "https://images.unsplash.com/photo-1620641788421-7a1c342ea42e?w=600&auto=format&fit=crop&q=60",
+    "video": "By7S7-6WjF4"
+  },
+  {
+    "id": 4,
+    "emojis": "🧱🛡️🥩⚔️🧗‍♂️",
+    "answer": "Attack on Titan",
+    "options": ["Attack on Titan", "Death Note", "Fullmetal Alchemist", "Tokyo Ghoul"],
+    "answers": ["attack on titan", "shingeki no kyojin", "титан", "атака титанов", "attackontitan", "атаклах титан"],
+    "image": "https://images.unsplash.com/photo-1541701494587-cb58502866ab?w=600&auto=format&fit=crop&q=60",
+    "video": "8OkpRKv6660"
+  },
+  {
+    "id": 5,
+    "emojis": "📓🍎✍️💀🕵️‍♂️",
+    "answer": "Death Note",
+    "options": ["Code Geass", "Steins;Gate", "Death Note", "Monster"],
+    "answers": ["death note", "үхлийн тэмдэглэл", "deathnote", "дез нот"],
+    "image": "https://images.unsplash.com/photo-1509198397868-475647b2a1e5?w=600&auto=format&fit=crop&q=60",
+    "video": "kNyR46e9Y8U"
+  },
+  {
+    "id": 6,
+    "emojis": "🏫💥🦸‍♂️🥦🤛",
+    "answer": "My Hero Academia",
+    "options": ["My Hero Academia", "One Punch Man", "Black Clover", "Mob Psycho 100"],
+    "answers": ["my hero academia", "миний баатрын академи", "boku no hero academia", "mha", "bnha"],
+    "image": "https://images.unsplash.com/photo-1534447677768-be436bb09401?w=600&auto=format&fit=crop&q=60",
+    "video": "Q0v3ajXhST0"
+  },
+  {
+    "id": 7,
+    "emojis": "🤞👁️👹🏫🩸",
+    "answer": "Jujutsu Kaisen",
+    "options": ["Chainsaw Man", "Jujutsu Kaisen", "Bleach", "Tokyo Ghoul"],
+    "answers": ["jujutsu kaisen", "жүжүцү кайсен", "jujutsukaisen", "жүжүцү"],
+    "image": "https://images.unsplash.com/photo-1542751371-adc38448a05e?w=600&auto=format&fit=crop&q=60",
+    "video": "v8b3YbcKySg"
+  },
+  {
+    "id": 8,
+    "emojis": "🐉🟠💇‍♂️☄️💥",
+    "answer": "Dragon Ball Z",
+    "options": ["Naruto", "One Piece", "Dragon Ball Z", "Bleach"],
+    "answers": ["dragon ball z", "dragon ball", "драгонбол", "драгон бол", "dbz", "драгонболл"],
+    "image": "https://images.unsplash.com/photo-1618336753974-aae8e04506aa?w=600&auto=format&fit=crop&q=60",
+    "video": "sfSgS8K_iI0"
+  },
+  {
+    "id": 9,
+    "emojis": "🏮🐷🐉🧹⛩️",
+    "answer": "Spirited Away",
+    "options": ["Spirited Away", "My Neighbor Totoro", "Princess Mononoke", "Howl's Moving Castle"],
+    "answers": ["spirited away", "сэн ба чихиро", "sen to chihiro", "чихиро", "spiritedaway", "сэн чихиро хоёр"],
+    "image": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=600&auto=format&fit=crop&q=60",
+    "video": "ByXuk9QqQmc"
+  },
+  {
+    "id": 10,
+    "emojis": "🎣🃏⚡🕷️🧑‍🤝‍🧑",
+    "answer": "Hunter x Hunter",
+    "options": ["Yu Yu Hakusho", "Fullmetal Alchemist", "Hunter x Hunter", "Fairy Tail"],
+    "answers": ["hunter x hunter", "хантер хантер", "hunterxhunter", "hxh", "хантер х хантер"],
+    "image": "https://images.unsplash.com/photo-1601042879364-f3947d3f9c16?w=600&auto=format&fit=crop&q=60",
+    "video": "faqmNFC_pqc"
+  }
+]

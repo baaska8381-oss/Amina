@@ -8,6 +8,7 @@ import VolleyballSpiker from "./components/VolleyballSpiker";
 import AboutStoryQuiz from "./components/AboutStoryQuiz";
 import IdolCoach from "./components/IdolCoach";
 import AminaHelper from "./components/AminaHelper";
+import AnimeEmojiGame from "./components/AnimeEmojiGame";
 import {
   ArrowUpRightIcon,
   PlayIcon,
@@ -26,7 +27,7 @@ if (typeof window !== "undefined") {
 }
 
 export default function App() {
-  const [activeGame, setActiveGame] = useState<"none" | "math" | "rhythm" | "volleyball">("none");
+  const [activeGame, setActiveGame] = useState<"none" | "math" | "rhythm" | "volleyball" | "anime">("none");
 
   const scrollToSection = (id: string) => {
     const element = document.getElementById(id);
@@ -459,6 +460,16 @@ export default function App() {
             >
               🏐 Volleyball IT Spiker
             </button>
+            <button
+              onClick={() => setActiveGame("anime")}
+              className={`px-5 py-2.5 rounded-full text-xs md:text-sm font-bold font-body transition-all cursor-pointer ${
+                activeGame === "anime"
+                  ? "bg-white text-black font-semibold tracking-wider animate-pulse"
+                  : "liquid-glass text-white hover:bg-white/10 border border-pink-500/20"
+              }`}
+            >
+              🏴‍☠️ Anime Emoji Trivia ✨
+            </button>
           </div>
 
           {/* Play Field */}
@@ -470,7 +481,7 @@ export default function App() {
                   initial={{ opacity: 0, scale: 0.95 }}
                   animate={{ opacity: 1, scale: 1 }}
                   exit={{ opacity: 0, scale: 0.95 }}
-                  className="grid grid-cols-1 md:grid-cols-3 gap-6 w-full text-left"
+                  className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-6 w-full text-left"
                 >
                   {/* Option 1 */}
                   <div className="liquid-glass p-6 rounded-2xl flex flex-col justify-between min-h-[220px]">
@@ -522,6 +533,23 @@ export default function App() {
                       Вейбол тоглоом
                     </button>
                   </div>
+
+                  {/* Option 4 */}
+                  <div className="liquid-glass p-6 rounded-2xl flex flex-col justify-between min-h-[220px] border border-pink-500/10">
+                    <div>
+                      <span className="text-[10px] uppercase font-mono tracking-widest text-pink-400 animate-pulse">Дуртай Сонирхол</span>
+                      <h4 className="font-heading italic text-2xl text-white mt-2">Anime Emoji Trivia</h4>
+                      <p className="text-xs text-white/70 font-body mt-2 leading-relaxed">
+                        One Piece, Naruto, Demon Slayer зэрэг алдартай аниме бүтээлүүдийн эможи таавар, дуу, зураг хосолсон тоглоом.
+                      </p>
+                    </div>
+                    <button
+                      onClick={() => setActiveGame("anime")}
+                      className="mt-6 border border-pink-500/20 bg-pink-500/10 hover:bg-pink-500 hover:text-white py-2.5 rounded-xl font-bold font-body text-xs text-center transition-all cursor-pointer"
+                    >
+                      Аниме Таавар Тоглох ✨
+                    </button>
+                  </div>
                 </motion.div>
               )}
 
@@ -558,6 +586,18 @@ export default function App() {
                   className="w-full"
                 >
                   <VolleyballSpiker />
+                </motion.div>
+              )}
+
+              {activeGame === "anime" && (
+                <motion.div
+                  key="anime-game"
+                  initial={{ opacity: 0, y: 10 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  exit={{ opacity: 0, y: -10 }}
+                  className="w-full"
+                >
+                  <AnimeEmojiGame />
                 </motion.div>
               )}
             </AnimatePresence>
